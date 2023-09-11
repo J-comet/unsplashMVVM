@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  unsplashMVVM
+
+  Created by 장혜성 on 2023/09/11.
+  
+*/
+
+"nickname_placeholder" = "Enter nickname";
+
+"nickname_result" = "My nickname is %@, %@, %@ ";
+
+"age_result" = "I am %d years old";

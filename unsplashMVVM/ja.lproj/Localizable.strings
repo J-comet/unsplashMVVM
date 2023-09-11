@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  unsplashMVVM
+
+  Created by 장혜성 on 2023/09/11.
+  
+*/
+
+"nickname_placeholder" = "ニックネームを入力してください";
+
+"nickname_result" = "私のニックネームは%@です";
+
+"age_result" = "일본 나이 %d";
+

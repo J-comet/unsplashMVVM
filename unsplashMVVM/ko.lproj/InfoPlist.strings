@@ -1,0 +1,13 @@
+/* 
+  InfoPlist.strings
+  unsplashMVVM
+
+  Created by 장혜성 on 2023/09/11.
+  
+*/
+
+//MARK: 앱이름, 권한 요청 등 다국어 지원
+
+"NSLocationWhenInUseUsageDescription" = "위치 권한 내놔";
+
+"CFBundleDisplayName" = "[한글] 앱이름";

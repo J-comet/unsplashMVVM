@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  unsplashMVVM
+
+  Created by 장혜성 on 2023/09/11.
+  
+*/
+
+"nickname_placeholder" = "닉네임을 입력해주세요";
+
+"nickname_result" = "당신의 닉네임은 %@, %@, %@ 입니다";
+
+"age_result" = "당신의 나이는 %d 살 입니다";
