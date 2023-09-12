@@ -13,33 +13,49 @@ class LoginViewController: UIViewController {
     @IBOutlet var idTextField: UITextField!
     @IBOutlet var pwTextField: UITextField!
     
+    var viewModel = LoginViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // 단방향데이터바인딩
-//        let sample = Observable(value: "none")
-//        sample.bind { text in
-//            print("bind", text)
-//        }
-//        
-//        sample.value = "고래밥"
-//        sample.value = "고래밥11"
-//        sample.value = "고래밥22"
-//        sample.value = "고래밥33"
-//        sample.value = "고래밥44"
         
         loginButton.addTarget(self, action: #selector(loginButtonClicked), for: .touchUpInside)
+        
+        viewModel.id.bind { text in
+            self.idTextField.text = text
+        }
+        viewModel.pw.bind { text in
+            self.pwTextField.text = text
+        }
+        viewModel.isValid.bind { isValid in
+            self.loginButton.isEnabled = isValid
+            self.loginButton.backgroundColor = isValid ? .green : .lightGray
+        }
+        
+        // editingChanged - 텍스트필드 변경때마다 호출하도록
+        idTextField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
+        pwTextField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
+    }
+    
+    @objc func textFieldChanged(_ sender: UITextField) {
+        switch sender {
+        case idTextField:
+            print("ID", sender.text!)
+            viewModel.id.value = sender.text ?? ""
+            viewModel.checkValidation()
+        case pwTextField:
+            print("PW", sender.text!)
+            viewModel.pw.value = sender.text ?? ""
+            viewModel.checkValidation()
+        default: print("11")
+        }
+        
     }
     
     @objc func loginButtonClicked() {
-        guard let id = idTextField.text else { return }
-        guard let pw = pwTextField.text else { return }
-        
-        if id.count >= 6 && pw == "1234" {
-            print("로그인 성공")
-        } else {
-            print("로그인 실패")
+        // 로그인 유효성 검사를 뷰모델에서 관리중
+        // 유효성 검사실패시 버튼 클릭이 안되도록 설정되어있음
+        viewModel.signIn {
+            print("로그인 성공!!! / Alert 띄우거나 화면 이동 시키기")
         }
     }
 

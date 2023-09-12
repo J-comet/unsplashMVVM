@@ -35,8 +35,8 @@ class SampleViewController: UIViewController {
         
         
         // 양방향데이터바인딩
-        var number3 = Observable(value: 10)
-        var number4 = Observable(value: 3)
+        var number3 = Observable(10)
+        var number4 = Observable(3)
         
         number3.bind { num in
             print("Observable", number3.value - number4.value)

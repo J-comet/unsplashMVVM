@@ -20,6 +20,11 @@
 		C0C9799B2AAFF2F900ED8103 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C9799A2AAFF2F900ED8103 /* Observable.swift */; };
 		C0C9799D2AAFFDE000ED8103 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C9799C2AAFFDE000ED8103 /* SampleViewController.swift */; };
 		C0C9799F2AB0015900ED8103 /* SampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C9799E2AB0015900ED8103 /* SampleViewModel.swift */; };
+		C0C979A12AB00E4200ED8103 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979A02AB00E4200ED8103 /* LoginViewModel.swift */; };
+		C0C979A42AB02A5F00ED8103 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979A32AB02A5F00ED8103 /* Photo.swift */; };
+		C0C979A62AB02A6F00ED8103 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979A52AB02A6F00ED8103 /* APIService.swift */; };
+		C0C979A82AB02B5800ED8103 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979A72AB02B5800ED8103 /* PhotoViewController.swift */; };
+		C0C979AA2AB02DAD00ED8103 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979A92AB02DAD00ED8103 /* PhotoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +52,11 @@
 		C0C9799A2AAFF2F900ED8103 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		C0C9799C2AAFFDE000ED8103 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 		C0C9799E2AB0015900ED8103 /* SampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewModel.swift; sourceTree = "<group>"; };
+		C0C979A02AB00E4200ED8103 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		C0C979A32AB02A5F00ED8103 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		C0C979A52AB02A6F00ED8103 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		C0C979A72AB02B5800ED8103 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		C0C979A92AB02DAD00ED8103 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,7 @@
 		C0C9795F2AAE994A00ED8103 /* unsplashMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				C0C979A22AB02A5100ED8103 /* Photo */,
 				C0C979972AAFED3D00ED8103 /* Login */,
 				C0C979602AAE994A00ED8103 /* AppDelegate.swift */,
 				C0C979622AAE994A00ED8103 /* SceneDelegate.swift */,
@@ -101,8 +112,20 @@
 			children = (
 				C0C979982AAFED5A00ED8103 /* LoginViewController.swift */,
 				C0C9799A2AAFF2F900ED8103 /* Observable.swift */,
+				C0C979A02AB00E4200ED8103 /* LoginViewModel.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		C0C979A22AB02A5100ED8103 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				C0C979A32AB02A5F00ED8103 /* Photo.swift */,
+				C0C979A52AB02A6F00ED8103 /* APIService.swift */,
+				C0C979A72AB02B5800ED8103 /* PhotoViewController.swift */,
+				C0C979A92AB02DAD00ED8103 /* PhotoViewModel.swift */,
+			);
+			path = Photo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,10 +207,15 @@
 				C0C979652AAE994A00ED8103 /* ViewController.swift in Sources */,
 				C0C979612AAE994A00ED8103 /* AppDelegate.swift in Sources */,
 				C0C979992AAFED5A00ED8103 /* LoginViewController.swift in Sources */,
+				C0C979A62AB02A6F00ED8103 /* APIService.swift in Sources */,
+				C0C979A82AB02B5800ED8103 /* PhotoViewController.swift in Sources */,
+				C0C979A42AB02A5F00ED8103 /* Photo.swift in Sources */,
 				C0C9799B2AAFF2F900ED8103 /* Observable.swift in Sources */,
 				C0C979632AAE994A00ED8103 /* SceneDelegate.swift in Sources */,
 				C0C9799F2AB0015900ED8103 /* SampleViewModel.swift in Sources */,
+				C0C979AA2AB02DAD00ED8103 /* PhotoViewModel.swift in Sources */,
 				C0C9799D2AAFFDE000ED8103 /* SampleViewController.swift in Sources */,
+				C0C979A12AB00E4200ED8103 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
