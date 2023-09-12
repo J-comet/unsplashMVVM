@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J58-gh-HT6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l0L-FR-ia8">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -67,10 +67,59 @@
             </objects>
             <point key="canvasLocation" x="2044" y="-287"/>
         </scene>
+        <!--Sample View Controller-->
+        <scene sceneID="wmU-YL-kmV">
+            <objects>
+                <viewController storyboardIdentifier="SampleViewController" id="l0L-FR-ia8" customClass="SampleViewController" customModule="unsplashMVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uDE-e3-lGM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YIX-eZ-HaR">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sampleCell" textLabel="fLt-1D-bFw" style="IBUITableViewCellStyleDefault" id="I0C-v3-17f">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I0C-v3-17f" id="n4V-EW-Ac8">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fLt-1D-bFw">
+                                                    <rect key="frame" x="20" y="0.0" width="353" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lnu-Ol-dXB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lnu-Ol-dXB" firstAttribute="trailing" secondItem="YIX-eZ-HaR" secondAttribute="trailing" id="Fbn-9h-24P"/>
+                            <constraint firstItem="YIX-eZ-HaR" firstAttribute="leading" secondItem="lnu-Ol-dXB" secondAttribute="leading" id="J3I-z0-X6t"/>
+                            <constraint firstItem="lnu-Ol-dXB" firstAttribute="bottom" secondItem="YIX-eZ-HaR" secondAttribute="bottom" id="Wa5-A0-oHP"/>
+                            <constraint firstItem="YIX-eZ-HaR" firstAttribute="top" secondItem="lnu-Ol-dXB" secondAttribute="top" id="sNz-CH-rOb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="userTableView" destination="YIX-eZ-HaR" id="I7H-VY-FjM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LcE-vJ-02w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3497" y="-277"/>
+        </scene>
         <!--로그인-->
         <scene sceneID="uYz-50-heY">
             <objects>
-                <viewController id="lVH-zf-Jsv" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="lVH-zf-Jsv" customClass="LoginViewController" customModule="unsplashMVVM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="blR-ne-RgT">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,6 +183,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="로그인" id="2th-Vx-EPM"/>
+                    <connections>
+                        <outlet property="idTextField" destination="8lr-ab-vMd" id="7uR-tG-v42"/>
+                        <outlet property="loginButton" destination="vKX-vE-xkr" id="rZP-T3-fwA"/>
+                        <outlet property="pwTextField" destination="A7F-ku-MeT" id="gs4-63-UDz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zqa-P6-QE7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -164,6 +218,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="J58-gh-HT6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ytq-nE-Di6">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
