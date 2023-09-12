@@ -26,6 +26,7 @@ class PhotoViewController: UIViewController {
         
         photoTableView.dataSource = self
         photoTableView.delegate = self
+        photoTableView.rowHeight = 100
     }
 
 }
@@ -36,9 +37,10 @@ extension PhotoViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "photoCell")!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoTableViewCell") as! PhotoTableViewCell
         let data = viewModel.cellForRowAt(at: indexPath)
         cell.backgroundColor = .lightGray
+        cell.configureCell(row: data.urls.thumb)
         return cell
     }
     

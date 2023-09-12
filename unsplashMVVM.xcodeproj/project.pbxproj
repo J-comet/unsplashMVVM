@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C077353D2AB08FE400770EA0 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C077353C2AB08FE400770EA0 /* PhotoTableViewCell.swift */; };
 		C0C979612AAE994A00ED8103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979602AAE994A00ED8103 /* AppDelegate.swift */; };
 		C0C979632AAE994A00ED8103 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979622AAE994A00ED8103 /* SceneDelegate.swift */; };
 		C0C979652AAE994A00ED8103 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979642AAE994A00ED8103 /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C077353C2AB08FE400770EA0 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 		C0C9795D2AAE994A00ED8103 /* unsplashMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unsplashMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C979602AAE994A00ED8103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0C979622AAE994A00ED8103 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				C0C979A52AB02A6F00ED8103 /* APIService.swift */,
 				C0C979A72AB02B5800ED8103 /* PhotoViewController.swift */,
 				C0C979A92AB02DAD00ED8103 /* PhotoViewModel.swift */,
+				C077353C2AB08FE400770EA0 /* PhotoTableViewCell.swift */,
 			);
 			path = Photo;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				C0C9799B2AAFF2F900ED8103 /* Observable.swift in Sources */,
 				C0C979632AAE994A00ED8103 /* SceneDelegate.swift in Sources */,
 				C0C9799F2AB0015900ED8103 /* SampleViewModel.swift in Sources */,
+				C077353D2AB08FE400770EA0 /* PhotoTableViewCell.swift in Sources */,
 				C0C979AA2AB02DAD00ED8103 /* PhotoViewModel.swift in Sources */,
 				C0C9799D2AAFFDE000ED8103 /* SampleViewController.swift in Sources */,
 				C0C979A12AB00E4200ED8103 /* LoginViewModel.swift in Sources */,
