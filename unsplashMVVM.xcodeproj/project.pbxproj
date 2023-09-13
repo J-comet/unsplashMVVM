@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C077353D2AB08FE400770EA0 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C077353C2AB08FE400770EA0 /* PhotoTableViewCell.swift */; };
+		C07735432AB139E200770EA0 /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07735422AB139E200770EA0 /* CalculateViewController.swift */; };
+		C07735452AB13AAC00770EA0 /* CalculateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07735442AB13AAC00770EA0 /* CalculateViewModel.swift */; };
+		C07735472AB13DB500770EA0 /* TestObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07735462AB13DB500770EA0 /* TestObservable.swift */; };
 		C0C979612AAE994A00ED8103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979602AAE994A00ED8103 /* AppDelegate.swift */; };
 		C0C979632AAE994A00ED8103 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979622AAE994A00ED8103 /* SceneDelegate.swift */; };
 		C0C979652AAE994A00ED8103 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979642AAE994A00ED8103 /* ViewController.swift */; };
@@ -30,6 +33,9 @@
 
 /* Begin PBXFileReference section */
 		C077353C2AB08FE400770EA0 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		C07735422AB139E200770EA0 /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
+		C07735442AB13AAC00770EA0 /* CalculateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewModel.swift; sourceTree = "<group>"; };
+		C07735462AB13DB500770EA0 /* TestObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestObservable.swift; sourceTree = "<group>"; };
 		C0C9795D2AAE994A00ED8103 /* unsplashMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unsplashMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C979602AAE994A00ED8103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0C979622AAE994A00ED8103 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +78,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C07735412AB139B400770EA0 /* Calculate */ = {
+			isa = PBXGroup;
+			children = (
+				C07735422AB139E200770EA0 /* CalculateViewController.swift */,
+				C07735442AB13AAC00770EA0 /* CalculateViewModel.swift */,
+				C07735462AB13DB500770EA0 /* TestObservable.swift */,
+			);
+			path = Calculate;
+			sourceTree = "<group>";
+		};
 		C0C979542AAE994A00ED8103 = {
 			isa = PBXGroup;
 			children = (
@@ -91,20 +107,22 @@
 		C0C9795F2AAE994A00ED8103 /* unsplashMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				C0C979A22AB02A5100ED8103 /* Photo */,
-				C0C979972AAFED3D00ED8103 /* Login */,
-				C0C979602AAE994A00ED8103 /* AppDelegate.swift */,
-				C0C979622AAE994A00ED8103 /* SceneDelegate.swift */,
-				C0C979642AAE994A00ED8103 /* ViewController.swift */,
-				C0C979662AAE994A00ED8103 /* Main.storyboard */,
-				C0C979692AAE994B00ED8103 /* Assets.xcassets */,
-				C0C9796B2AAE994B00ED8103 /* LaunchScreen.storyboard */,
 				C0C9796E2AAE994B00ED8103 /* Info.plist */,
-				C0C9797E2AAEAE2500ED8103 /* Localizable.strings */,
-				C0C979812AAEBAB100ED8103 /* String+Extension.swift */,
-				C0C979872AAEBDCF00ED8103 /* InfoPlist.strings */,
+				C0C979602AAE994A00ED8103 /* AppDelegate.swift */,
+				C0C9799A2AAFF2F900ED8103 /* Observable.swift */,
 				C0C9799C2AAFFDE000ED8103 /* SampleViewController.swift */,
 				C0C9799E2AB0015900ED8103 /* SampleViewModel.swift */,
+				C0C979622AAE994A00ED8103 /* SceneDelegate.swift */,
+				C0C979812AAEBAB100ED8103 /* String+Extension.swift */,
+				C0C979642AAE994A00ED8103 /* ViewController.swift */,
+				C0C979692AAE994B00ED8103 /* Assets.xcassets */,
+				C07735412AB139B400770EA0 /* Calculate */,
+				C0C979872AAEBDCF00ED8103 /* InfoPlist.strings */,
+				C0C9796B2AAE994B00ED8103 /* LaunchScreen.storyboard */,
+				C0C9797E2AAEAE2500ED8103 /* Localizable.strings */,
+				C0C979972AAFED3D00ED8103 /* Login */,
+				C0C979662AAE994A00ED8103 /* Main.storyboard */,
+				C0C979A22AB02A5100ED8103 /* Photo */,
 			);
 			path = unsplashMVVM;
 			sourceTree = "<group>";
@@ -113,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				C0C979982AAFED5A00ED8103 /* LoginViewController.swift */,
-				C0C9799A2AAFF2F900ED8103 /* Observable.swift */,
 				C0C979A02AB00E4200ED8103 /* LoginViewModel.swift */,
 			);
 			path = Login;
@@ -214,10 +231,13 @@
 				C0C979A82AB02B5800ED8103 /* PhotoViewController.swift in Sources */,
 				C0C979A42AB02A5F00ED8103 /* Photo.swift in Sources */,
 				C0C9799B2AAFF2F900ED8103 /* Observable.swift in Sources */,
+				C07735432AB139E200770EA0 /* CalculateViewController.swift in Sources */,
 				C0C979632AAE994A00ED8103 /* SceneDelegate.swift in Sources */,
 				C0C9799F2AB0015900ED8103 /* SampleViewModel.swift in Sources */,
+				C07735472AB13DB500770EA0 /* TestObservable.swift in Sources */,
 				C077353D2AB08FE400770EA0 /* PhotoTableViewCell.swift in Sources */,
 				C0C979AA2AB02DAD00ED8103 /* PhotoViewModel.swift in Sources */,
+				C07735452AB13AAC00770EA0 /* CalculateViewModel.swift in Sources */,
 				C0C9799D2AAFFDE000ED8103 /* SampleViewController.swift in Sources */,
 				C0C979A12AB00E4200ED8103 /* LoginViewModel.swift in Sources */,
 			);
