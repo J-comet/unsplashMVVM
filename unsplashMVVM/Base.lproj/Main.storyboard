@@ -270,7 +270,14 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U58-ay-bCE">
-                                <rect key="frame" x="175" y="263" width="42" height="21"/>
+                                <rect key="frame" x="70" y="236" width="252" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pta-iZ-pIh">
+                                <rect key="frame" x="70" y="317" width="252" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -284,11 +291,12 @@
                         <outlet property="firstTextField" destination="XBP-aM-NqK" id="5Ek-ir-xzX"/>
                         <outlet property="resultLabel" destination="U58-ay-bCE" id="QsN-Ab-ZRb"/>
                         <outlet property="secondTextField" destination="MSR-DO-nlW" id="vH8-io-g2a"/>
+                        <outlet property="tempLabel" destination="pta-iZ-pIh" id="yWe-GP-uaS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8pc-Vq-mdl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4451" y="434"/>
+            <point key="canvasLocation" x="4449.6183206106871" y="433.80281690140845"/>
         </scene>
         <!--Item-->
         <scene sceneID="6Yf-VQ-ssJ">
