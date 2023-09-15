@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-final class MainSettingViewController: UIViewController {
+final class MainSettingModernCollectionViewController: UIViewController {
     
     enum Section: String, CaseIterable {
         case all = "전체 설정"

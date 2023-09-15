@@ -17,7 +17,9 @@
 		C07735892AB4040800770EA0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07735882AB4040800770EA0 /* User.swift */; };
 		C077358D2AB4293400770EA0 /* StudyModernCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C077358C2AB4293400770EA0 /* StudyModernCollectionViewController.swift */; };
 		C077358F2AB43DBE00770EA0 /* TestSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C077358E2AB43DBE00770EA0 /* TestSetting.swift */; };
-		C07735932AB443E000770EA0 /* MainSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07735922AB443E000770EA0 /* MainSettingViewController.swift */; };
+		C07735932AB443E000770EA0 /* MainSettingModernCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07735922AB443E000770EA0 /* MainSettingModernCollectionViewController.swift */; };
+		C07735962AB44DCE00770EA0 /* ShoppingModernCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07735952AB44DCE00770EA0 /* ShoppingModernCollectionViewController.swift */; };
+		C07735982AB4514C00770EA0 /* Shopping.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07735972AB4514C00770EA0 /* Shopping.swift */; };
 		C0C979612AAE994A00ED8103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979602AAE994A00ED8103 /* AppDelegate.swift */; };
 		C0C979632AAE994A00ED8103 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979622AAE994A00ED8103 /* SceneDelegate.swift */; };
 		C0C979652AAE994A00ED8103 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979642AAE994A00ED8103 /* ViewController.swift */; };
@@ -48,7 +50,9 @@
 		C07735882AB4040800770EA0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C077358C2AB4293400770EA0 /* StudyModernCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyModernCollectionViewController.swift; sourceTree = "<group>"; };
 		C077358E2AB43DBE00770EA0 /* TestSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSetting.swift; sourceTree = "<group>"; };
-		C07735922AB443E000770EA0 /* MainSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSettingViewController.swift; sourceTree = "<group>"; };
+		C07735922AB443E000770EA0 /* MainSettingModernCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSettingModernCollectionViewController.swift; sourceTree = "<group>"; };
+		C07735952AB44DCE00770EA0 /* ShoppingModernCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingModernCollectionViewController.swift; sourceTree = "<group>"; };
+		C07735972AB4514C00770EA0 /* Shopping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping.swift; sourceTree = "<group>"; };
 		C0C9795D2AAE994A00ED8103 /* unsplashMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unsplashMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C979602AAE994A00ED8103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0C979622AAE994A00ED8103 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 		C077358A2AB4290500770EA0 /* StudyModernCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				C07735942AB44D8700770EA0 /* Shopping */,
 				C07735912AB443D200770EA0 /* MainSetting */,
 				C07735902AB4439200770EA0 /* Test */,
 			);
@@ -140,9 +145,18 @@
 		C07735912AB443D200770EA0 /* MainSetting */ = {
 			isa = PBXGroup;
 			children = (
-				C07735922AB443E000770EA0 /* MainSettingViewController.swift */,
+				C07735922AB443E000770EA0 /* MainSettingModernCollectionViewController.swift */,
 			);
 			path = MainSetting;
+			sourceTree = "<group>";
+		};
+		C07735942AB44D8700770EA0 /* Shopping */ = {
+			isa = PBXGroup;
+			children = (
+				C07735952AB44DCE00770EA0 /* ShoppingModernCollectionViewController.swift */,
+				C07735972AB4514C00770EA0 /* Shopping.swift */,
+			);
+			path = Shopping;
 			sourceTree = "<group>";
 		};
 		C0C979542AAE994A00ED8103 = {
@@ -291,11 +305,12 @@
 			files = (
 				C0C979822AAEBAB100ED8103 /* String+Extension.swift in Sources */,
 				C0C979652AAE994A00ED8103 /* ViewController.swift in Sources */,
-				C07735932AB443E000770EA0 /* MainSettingViewController.swift in Sources */,
+				C07735932AB443E000770EA0 /* MainSettingModernCollectionViewController.swift in Sources */,
 				C0C979612AAE994A00ED8103 /* AppDelegate.swift in Sources */,
 				C0C979992AAFED5A00ED8103 /* LoginViewController.swift in Sources */,
 				C0C979A62AB02A6F00ED8103 /* APIService.swift in Sources */,
 				C0C979A82AB02B5800ED8103 /* PhotoViewController.swift in Sources */,
+				C07735962AB44DCE00770EA0 /* ShoppingModernCollectionViewController.swift in Sources */,
 				C0C979A42AB02A5F00ED8103 /* Photo.swift in Sources */,
 				C0C9799B2AAFF2F900ED8103 /* Observable.swift in Sources */,
 				C07735892AB4040800770EA0 /* User.swift in Sources */,
@@ -307,6 +322,7 @@
 				C07735472AB13DB500770EA0 /* TestObservable.swift in Sources */,
 				C077353D2AB08FE400770EA0 /* PhotoTableViewCell.swift in Sources */,
 				C0C979AA2AB02DAD00ED8103 /* PhotoViewModel.swift in Sources */,
+				C07735982AB4514C00770EA0 /* Shopping.swift in Sources */,
 				C07735452AB13AAC00770EA0 /* CalculateViewModel.swift in Sources */,
 				C077358D2AB4293400770EA0 /* StudyModernCollectionViewController.swift in Sources */,
 				C077355A2AB296EF00770EA0 /* NewSimpleTableViewController.swift in Sources */,
