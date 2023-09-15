@@ -7,15 +7,6 @@
 
 import UIKit
 
-struct User {
-    let name: String
-    let age: Int
-    
-    var introduce: String {
-        return "\(name), \(age)살"
-    }
-}
-
 class SampleViewController: UIViewController {
 
     @IBOutlet var userTableView: UITableView!

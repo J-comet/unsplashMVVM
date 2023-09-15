@@ -14,6 +14,7 @@
 		C077355A2AB296EF00770EA0 /* NewSimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07735592AB296EF00770EA0 /* NewSimpleTableViewController.swift */; };
 		C077355F2AB2A01700770EA0 /* NewSimpleCollectionViewControoler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C077355E2AB2A01700770EA0 /* NewSimpleCollectionViewControoler.swift */; };
 		C07735622AB2A9D500770EA0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C07735612AB2A9D500770EA0 /* SnapKit */; };
+		C07735892AB4040800770EA0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07735882AB4040800770EA0 /* User.swift */; };
 		C0C979612AAE994A00ED8103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979602AAE994A00ED8103 /* AppDelegate.swift */; };
 		C0C979632AAE994A00ED8103 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979622AAE994A00ED8103 /* SceneDelegate.swift */; };
 		C0C979652AAE994A00ED8103 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979642AAE994A00ED8103 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 		C07735462AB13DB500770EA0 /* TestObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestObservable.swift; sourceTree = "<group>"; };
 		C07735592AB296EF00770EA0 /* NewSimpleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSimpleTableViewController.swift; sourceTree = "<group>"; };
 		C077355E2AB2A01700770EA0 /* NewSimpleCollectionViewControoler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSimpleCollectionViewControoler.swift; sourceTree = "<group>"; };
+		C07735882AB4040800770EA0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C0C9795D2AAE994A00ED8103 /* unsplashMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unsplashMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C979602AAE994A00ED8103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0C979622AAE994A00ED8103 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,14 @@
 			path = New;
 			sourceTree = "<group>";
 		};
+		C07735872AB4040000770EA0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C07735882AB4040800770EA0 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C0C979542AAE994A00ED8103 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +132,7 @@
 		C0C9795F2AAE994A00ED8103 /* unsplashMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				C07735872AB4040000770EA0 /* Model */,
 				C0C9796E2AAE994B00ED8103 /* Info.plist */,
 				C0C979602AAE994A00ED8103 /* AppDelegate.swift */,
 				C0C9799A2AAFF2F900ED8103 /* Observable.swift */,
@@ -253,6 +264,7 @@
 				C0C979A82AB02B5800ED8103 /* PhotoViewController.swift in Sources */,
 				C0C979A42AB02A5F00ED8103 /* Photo.swift in Sources */,
 				C0C9799B2AAFF2F900ED8103 /* Observable.swift in Sources */,
+				C07735892AB4040800770EA0 /* User.swift in Sources */,
 				C07735432AB139E200770EA0 /* CalculateViewController.swift in Sources */,
 				C0C979632AAE994A00ED8103 /* SceneDelegate.swift in Sources */,
 				C0C9799F2AB0015900ED8103 /* SampleViewModel.swift in Sources */,

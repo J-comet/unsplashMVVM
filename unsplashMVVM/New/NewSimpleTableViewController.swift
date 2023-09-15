@@ -11,6 +11,7 @@ class NewSimpleTableViewController: UITableViewController {
     
     var userList = [
         User(name: "상어", age: 10),
+        User(name: "상어", age: 10),
         User(name: "고래", age: 20),
         User(name: "금붕어", age: 30),
         User(name: "장어", age: 40)
