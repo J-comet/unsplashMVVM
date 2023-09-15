@@ -18,12 +18,16 @@ import SnapKit
 
 final class StudyModernCollectionViewController: UIViewController {
     
-    private let list = ["disclosureIndicator", "outlineDisclosure", "checkmark", "delete", "insert", "multiselect", "label", "customView"]
-    private let list2 = ["모든 기기에서 공유"]
+    enum Section: Int, CaseIterable {
+    case first
+    case second
+    }
+    
+    private let list2: [TestSetting] = [TestSetting(title: "오징어", imgName: "fanblades.fill", subTitle: "Bottom")]
     
     private lazy var settingCollectionView = UICollectionView(frame: .zero, collectionViewLayout: self.createLayout())
     
-    private var dataSource: UICollectionViewDiffableDataSource<Int, String>!  // UICollectionViewDiffableDataSource<섹션, 아이템>
+    private var dataSource: UICollectionViewDiffableDataSource<Section, TestSetting>!  // UICollectionViewDiffableDataSource<섹션, 아이템>
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,16 +38,25 @@ final class StudyModernCollectionViewController: UIViewController {
         }
         
         // 셀 디자인 및 데이터 처리
-        let cellRegisteration = UICollectionView.CellRegistration<UICollectionViewListCell, String> { cell, indexPath, itemIdentifier in
+        let cellRegisteration = UICollectionView.CellRegistration<UICollectionViewListCell, TestSetting> { cell, indexPath, itemIdentifier in
             var content = UIListContentConfiguration.valueCell()
-            content.text = itemIdentifier
+            content.text = itemIdentifier.title
             content.textProperties.color = .white
             content.textProperties.font = .monospacedSystemFont(ofSize: 14, weight: .regular)
-            content.secondaryText = "켬"
-            content.image = UIImage(systemName: "star.fill")
+            content.secondaryText = itemIdentifier.subTitle
+            content.image = UIImage(systemName: itemIdentifier.imgName)
             content.imageProperties.tintColor = .green
-            content.prefersSideBySideTextAndSecondaryText = true  // true => 사이드에 SecondaryText 나오게하기 , false => 아래로 나오게하기
-            content.textToSecondaryTextVerticalPadding = 20
+            
+            if !itemIdentifier.subTitle.isEmpty {
+                if itemIdentifier.subTitle == "Side" {
+                    // true => 사이드에 SecondaryText 나오게하기 , false => 아래로 나오게하기
+                    content.prefersSideBySideTextAndSecondaryText = true
+                } else {
+                    content.prefersSideBySideTextAndSecondaryText = false
+                }
+            }
+                          
+            content.textToSecondaryTextVerticalPadding = 12
             cell.contentConfiguration = content
             
             // accessory
@@ -60,9 +73,9 @@ final class StudyModernCollectionViewController: UIViewController {
                 case 4:
                     cell.accessories = [.insert(displayed: .always)]
                 case 5:
-                    cell.accessories = [.reorder(displayed: .always)]
-                case 6:
                     cell.accessories = [.multiselect(displayed: .always)]
+                case 6:
+                    cell.accessories = [.reorder(displayed: .always)]
                 case 7:
                     cell.accessories = [.label(text: "레이블모드")]
                 default:
@@ -89,10 +102,10 @@ final class StudyModernCollectionViewController: UIViewController {
             return cell
         })
         
-        var snapshot = NSDiffableDataSourceSnapshot<Int, String>()
-        snapshot.appendSections([0,1])
-        snapshot.appendItems(list, toSection: 0)
-        snapshot.appendItems(list2, toSection: 1)
+        var snapshot = NSDiffableDataSourceSnapshot<Section, TestSetting>()
+        snapshot.appendSections(Section.allCases)
+        snapshot.appendItems(TestSettingInfo.list, toSection: .first)
+        snapshot.appendItems(list2, toSection: .second)
         dataSource.apply(snapshot)
     }
     
