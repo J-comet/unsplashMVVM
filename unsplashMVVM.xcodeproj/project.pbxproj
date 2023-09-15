@@ -15,6 +15,7 @@
 		C077355F2AB2A01700770EA0 /* NewSimpleCollectionViewControoler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C077355E2AB2A01700770EA0 /* NewSimpleCollectionViewControoler.swift */; };
 		C07735622AB2A9D500770EA0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C07735612AB2A9D500770EA0 /* SnapKit */; };
 		C07735892AB4040800770EA0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07735882AB4040800770EA0 /* User.swift */; };
+		C077358D2AB4293400770EA0 /* StudyModernCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C077358C2AB4293400770EA0 /* StudyModernCollectionViewController.swift */; };
 		C0C979612AAE994A00ED8103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979602AAE994A00ED8103 /* AppDelegate.swift */; };
 		C0C979632AAE994A00ED8103 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979622AAE994A00ED8103 /* SceneDelegate.swift */; };
 		C0C979652AAE994A00ED8103 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979642AAE994A00ED8103 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 		C07735592AB296EF00770EA0 /* NewSimpleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSimpleTableViewController.swift; sourceTree = "<group>"; };
 		C077355E2AB2A01700770EA0 /* NewSimpleCollectionViewControoler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSimpleCollectionViewControoler.swift; sourceTree = "<group>"; };
 		C07735882AB4040800770EA0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C077358C2AB4293400770EA0 /* StudyModernCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyModernCollectionViewController.swift; sourceTree = "<group>"; };
 		C0C9795D2AAE994A00ED8103 /* unsplashMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unsplashMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C979602AAE994A00ED8103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0C979622AAE994A00ED8103 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		C077358A2AB4290500770EA0 /* StudyModernCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				C077358C2AB4293400770EA0 /* StudyModernCollectionViewController.swift */,
+			);
+			path = StudyModernCollectionView;
+			sourceTree = "<group>";
+		};
 		C0C979542AAE994A00ED8103 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +142,7 @@
 		C0C9795F2AAE994A00ED8103 /* unsplashMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				C077358A2AB4290500770EA0 /* StudyModernCollectionView */,
 				C07735872AB4040000770EA0 /* Model */,
 				C0C9796E2AAE994B00ED8103 /* Info.plist */,
 				C0C979602AAE994A00ED8103 /* AppDelegate.swift */,
@@ -273,6 +284,7 @@
 				C077353D2AB08FE400770EA0 /* PhotoTableViewCell.swift in Sources */,
 				C0C979AA2AB02DAD00ED8103 /* PhotoViewModel.swift in Sources */,
 				C07735452AB13AAC00770EA0 /* CalculateViewModel.swift in Sources */,
+				C077358D2AB4293400770EA0 /* StudyModernCollectionViewController.swift in Sources */,
 				C077355A2AB296EF00770EA0 /* NewSimpleTableViewController.swift in Sources */,
 				C0C9799D2AAFFDE000ED8103 /* SampleViewController.swift in Sources */,
 				C0C979A12AB00E4200ED8103 /* LoginViewModel.swift in Sources */,

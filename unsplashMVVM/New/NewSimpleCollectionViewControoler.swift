@@ -92,7 +92,7 @@ class NewSimpleCollectionViewController: UIViewController {
             content.secondaryText = "\(itemIdentifier.age)세"
             content.image = UIImage(systemName: "star.fill")
             content.imageProperties.tintColor = .green
-            content.prefersSideBySideTextAndSecondaryText = false  // true => 사이드에 SecondaryText 나오게하기 , false => 아래로 나오게하기
+            content.prefersSideBySideTextAndSecondaryText = false  // true => 사이드에 사이드텍스트 나오게하기 , false => 아래로 나오게하기
             content.textToSecondaryTextVerticalPadding = 20
             cell.contentConfiguration = content
             
