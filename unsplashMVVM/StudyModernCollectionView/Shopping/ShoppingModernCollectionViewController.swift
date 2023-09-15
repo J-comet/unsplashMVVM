@@ -47,6 +47,7 @@ final class ShoppingModernCollectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        shoppingCollectionView.delegate = self
         setConstraints()
         
         // cell
@@ -58,6 +59,14 @@ final class ShoppingModernCollectionViewController: UIViewController {
             content.image = itemIdentifier.isSelected ? UIImage(systemName: "bookmark.fill") : UIImage(systemName: "bookmark")
             content.imageProperties.tintColor = .link
             cell.contentConfiguration = content
+            
+            let image = UIImage(systemName: "star.fill")
+            let accessoryConfiguration = UICellAccessory.CustomViewConfiguration(
+                customView: UIImageView(image: image),
+                placement: .trailing(displayed: .always),
+                tintColor: .systemYellow
+            )
+            cell.accessories = [.customView(configuration: accessoryConfiguration)]
             
             var backgroundConfig = UIBackgroundConfiguration.listPlainCell()
             backgroundConfig.backgroundColor = .systemGray2
@@ -129,5 +138,12 @@ final class ShoppingModernCollectionViewController: UIViewController {
             make.horizontalEdges.equalToSuperview()
             make.bottom.equalTo(view.safeAreaLayoutGuide)
         }
+    }
+}
+
+extension ShoppingModernCollectionViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(#function)
+        collectionView.deselectItem(at: indexPath, animated: true)
     }
 }

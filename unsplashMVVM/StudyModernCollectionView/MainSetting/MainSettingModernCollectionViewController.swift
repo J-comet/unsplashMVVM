@@ -48,7 +48,7 @@ final class MainSettingModernCollectionViewController: UIViewController {
             cell.backgroundConfiguration = backgroundConfig
         }
         
-        // header
+        // section header
         let headerRegistration = UICollectionView.SupplementaryRegistration<UICollectionViewListCell>(elementKind: UICollectionView.elementKindSectionHeader) { supplementaryView, elementKind, indexPath in
             var configutation = UIListContentConfiguration.groupedHeader()
             configutation.text = self.sectionList[indexPath.section]
@@ -67,7 +67,7 @@ final class MainSettingModernCollectionViewController: UIViewController {
             return cell
         })
         
-        // header 추가
+        // section header 추가
         dataSource.supplementaryViewProvider = { collectionView, elementKind, indexPath in
             collectionView.dequeueConfiguredReusableSupplementary(using: headerRegistration, for: indexPath)
         }
