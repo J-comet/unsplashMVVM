@@ -11,10 +11,12 @@ class PhotoViewModel {
     
     var list = Observable(Photo(total: 0, total_pages: 0, results: []))
     
-    func fetchPhoto() {
-        APIService.shared.searchPhoto(query: "space") { photo in
-            guard let photo else { return }
-            self.list.value = photo
+    func fetchPhoto(text: String) {
+        DispatchQueue.main.async {
+            APIService.shared.searchPhoto(query: text) { photo in
+                guard let photo else { return }
+                self.list.value = photo
+            }
         }
     }
     

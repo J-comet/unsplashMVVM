@@ -20,6 +20,9 @@
 		C07735932AB443E000770EA0 /* MainSettingModernCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07735922AB443E000770EA0 /* MainSettingModernCollectionViewController.swift */; };
 		C07735962AB44DCE00770EA0 /* ShoppingModernCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07735952AB44DCE00770EA0 /* ShoppingModernCollectionViewController.swift */; };
 		C07735982AB4514C00770EA0 /* Shopping.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07735972AB4514C00770EA0 /* Shopping.swift */; };
+		C077359A2AB7D34500770EA0 /* NumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07735992AB7D34500770EA0 /* NumberViewController.swift */; };
+		C077359C2AB7D93800770EA0 /* NumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C077359B2AB7D93800770EA0 /* NumberViewModel.swift */; };
+		C077359E2AB7E7A600770EA0 /* NewSimpleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C077359D2AB7E7A600770EA0 /* NewSimpleViewModel.swift */; };
 		C0C979612AAE994A00ED8103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979602AAE994A00ED8103 /* AppDelegate.swift */; };
 		C0C979632AAE994A00ED8103 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979622AAE994A00ED8103 /* SceneDelegate.swift */; };
 		C0C979652AAE994A00ED8103 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979642AAE994A00ED8103 /* ViewController.swift */; };
@@ -53,6 +56,9 @@
 		C07735922AB443E000770EA0 /* MainSettingModernCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSettingModernCollectionViewController.swift; sourceTree = "<group>"; };
 		C07735952AB44DCE00770EA0 /* ShoppingModernCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingModernCollectionViewController.swift; sourceTree = "<group>"; };
 		C07735972AB4514C00770EA0 /* Shopping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping.swift; sourceTree = "<group>"; };
+		C07735992AB7D34500770EA0 /* NumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewController.swift; sourceTree = "<group>"; };
+		C077359B2AB7D93800770EA0 /* NumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewModel.swift; sourceTree = "<group>"; };
+		C077359D2AB7E7A600770EA0 /* NewSimpleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSimpleViewModel.swift; sourceTree = "<group>"; };
 		C0C9795D2AAE994A00ED8103 /* unsplashMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unsplashMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C979602AAE994A00ED8103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0C979622AAE994A00ED8103 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +117,7 @@
 			children = (
 				C07735592AB296EF00770EA0 /* NewSimpleTableViewController.swift */,
 				C077355E2AB2A01700770EA0 /* NewSimpleCollectionViewControoler.swift */,
+				C077359D2AB7E7A600770EA0 /* NewSimpleViewModel.swift */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -206,6 +213,8 @@
 			children = (
 				C0C979982AAFED5A00ED8103 /* LoginViewController.swift */,
 				C0C979A02AB00E4200ED8103 /* LoginViewModel.swift */,
+				C07735992AB7D34500770EA0 /* NumberViewController.swift */,
+				C077359B2AB7D93800770EA0 /* NumberViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -306,6 +315,7 @@
 				C0C979822AAEBAB100ED8103 /* String+Extension.swift in Sources */,
 				C0C979652AAE994A00ED8103 /* ViewController.swift in Sources */,
 				C07735932AB443E000770EA0 /* MainSettingModernCollectionViewController.swift in Sources */,
+				C077359C2AB7D93800770EA0 /* NumberViewModel.swift in Sources */,
 				C0C979612AAE994A00ED8103 /* AppDelegate.swift in Sources */,
 				C0C979992AAFED5A00ED8103 /* LoginViewController.swift in Sources */,
 				C0C979A62AB02A6F00ED8103 /* APIService.swift in Sources */,
@@ -313,9 +323,11 @@
 				C07735962AB44DCE00770EA0 /* ShoppingModernCollectionViewController.swift in Sources */,
 				C0C979A42AB02A5F00ED8103 /* Photo.swift in Sources */,
 				C0C9799B2AAFF2F900ED8103 /* Observable.swift in Sources */,
+				C077359E2AB7E7A600770EA0 /* NewSimpleViewModel.swift in Sources */,
 				C07735892AB4040800770EA0 /* User.swift in Sources */,
 				C07735432AB139E200770EA0 /* CalculateViewController.swift in Sources */,
 				C077358F2AB43DBE00770EA0 /* TestSetting.swift in Sources */,
+				C077359A2AB7D34500770EA0 /* NumberViewController.swift in Sources */,
 				C0C979632AAE994A00ED8103 /* SceneDelegate.swift in Sources */,
 				C0C9799F2AB0015900ED8103 /* SampleViewModel.swift in Sources */,
 				C077355F2AB2A01700770EA0 /* NewSimpleCollectionViewControoler.swift in Sources */,
