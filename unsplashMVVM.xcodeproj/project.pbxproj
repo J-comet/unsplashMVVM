@@ -26,6 +26,9 @@
 		C07735A22AB82C2200770EA0 /* NetflixViewContorller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07735A12AB82C2200770EA0 /* NetflixViewContorller.swift */; };
 		C07735A42AB830F100770EA0 /* InputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07735A32AB830F100770EA0 /* InputTextField.swift */; };
 		C07735A62AB8369100770EA0 /* NetflixViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07735A52AB8369100770EA0 /* NetflixViewModel.swift */; };
+		C07735A92AB84DA100770EA0 /* RandomPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07735A82AB84DA100770EA0 /* RandomPhotoViewController.swift */; };
+		C07735AB2AB851EE00770EA0 /* RandomPhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07735AA2AB851EE00770EA0 /* RandomPhotoViewModel.swift */; };
+		C07735B02AB8540100770EA0 /* RandomPhotoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07735AF2AB8540100770EA0 /* RandomPhotoRepository.swift */; };
 		C0C979612AAE994A00ED8103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979602AAE994A00ED8103 /* AppDelegate.swift */; };
 		C0C979632AAE994A00ED8103 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979622AAE994A00ED8103 /* SceneDelegate.swift */; };
 		C0C979652AAE994A00ED8103 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C979642AAE994A00ED8103 /* ViewController.swift */; };
@@ -65,6 +68,9 @@
 		C07735A12AB82C2200770EA0 /* NetflixViewContorller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixViewContorller.swift; sourceTree = "<group>"; };
 		C07735A32AB830F100770EA0 /* InputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextField.swift; sourceTree = "<group>"; };
 		C07735A52AB8369100770EA0 /* NetflixViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixViewModel.swift; sourceTree = "<group>"; };
+		C07735A82AB84DA100770EA0 /* RandomPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPhotoViewController.swift; sourceTree = "<group>"; };
+		C07735AA2AB851EE00770EA0 /* RandomPhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPhotoViewModel.swift; sourceTree = "<group>"; };
+		C07735AF2AB8540100770EA0 /* RandomPhotoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPhotoRepository.swift; sourceTree = "<group>"; };
 		C0C9795D2AAE994A00ED8103 /* unsplashMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unsplashMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C979602AAE994A00ED8103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0C979622AAE994A00ED8103 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,12 +178,13 @@
 			path = Shopping;
 			sourceTree = "<group>";
 		};
-		C077359F2AB82BD900770EA0 /* StudyMVVM */ = {
+		C077359F2AB82BD900770EA0 /* 0918_Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				C07735A72AB84D6800770EA0 /* RandomPhoto */,
 				C07735A02AB82BEF00770EA0 /* NetflixMVVM */,
 			);
-			path = StudyMVVM;
+			path = 0918_Assignment;
 			sourceTree = "<group>";
 		};
 		C07735A02AB82BEF00770EA0 /* NetflixMVVM */ = {
@@ -188,6 +195,16 @@
 				C07735A52AB8369100770EA0 /* NetflixViewModel.swift */,
 			);
 			path = NetflixMVVM;
+			sourceTree = "<group>";
+		};
+		C07735A72AB84D6800770EA0 /* RandomPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				C07735A82AB84DA100770EA0 /* RandomPhotoViewController.swift */,
+				C07735AA2AB851EE00770EA0 /* RandomPhotoViewModel.swift */,
+				C07735AF2AB8540100770EA0 /* RandomPhotoRepository.swift */,
+			);
+			path = RandomPhoto;
 			sourceTree = "<group>";
 		};
 		C0C979542AAE994A00ED8103 = {
@@ -209,7 +226,7 @@
 		C0C9795F2AAE994A00ED8103 /* unsplashMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				C077359F2AB82BD900770EA0 /* StudyMVVM */,
+				C077359F2AB82BD900770EA0 /* 0918_Assignment */,
 				C077358A2AB4290500770EA0 /* StudyModernCollectionView */,
 				C0C9796E2AAE994B00ED8103 /* Info.plist */,
 				C0C979602AAE994A00ED8103 /* AppDelegate.swift */,
@@ -341,6 +358,8 @@
 				C0C979652AAE994A00ED8103 /* ViewController.swift in Sources */,
 				C07735932AB443E000770EA0 /* MainSettingModernCollectionViewController.swift in Sources */,
 				C07735A22AB82C2200770EA0 /* NetflixViewContorller.swift in Sources */,
+				C07735AB2AB851EE00770EA0 /* RandomPhotoViewModel.swift in Sources */,
+				C07735A92AB84DA100770EA0 /* RandomPhotoViewController.swift in Sources */,
 				C077359C2AB7D93800770EA0 /* NumberViewModel.swift in Sources */,
 				C0C979612AAE994A00ED8103 /* AppDelegate.swift in Sources */,
 				C0C979992AAFED5A00ED8103 /* LoginViewController.swift in Sources */,
@@ -368,6 +387,7 @@
 				C077355A2AB296EF00770EA0 /* NewSimpleTableViewController.swift in Sources */,
 				C0C9799D2AAFFDE000ED8103 /* SampleViewController.swift in Sources */,
 				C0C979A12AB00E4200ED8103 /* LoginViewModel.swift in Sources */,
+				C07735B02AB8540100770EA0 /* RandomPhotoRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
