@@ -21,7 +21,6 @@ final class MainSettingModernCollectionViewController: UIViewController {
         collectionViewLayout: self.createLayout()
     )
     
-    private let sectionList: [String] = ["전체 설정", "개인 설정", "기타"]
     private let itemList: [String] = ["공지사항","실험실","버전정보"]
     private let itemList2: [String] = ["개인/보안","알림","채팅","멀티프로필"]
     private let itemList3: [String] = ["고객센터/도움말"]
@@ -51,7 +50,7 @@ final class MainSettingModernCollectionViewController: UIViewController {
         // section header
         let headerRegistration = UICollectionView.SupplementaryRegistration<UICollectionViewListCell>(elementKind: UICollectionView.elementKindSectionHeader) { supplementaryView, elementKind, indexPath in
             var configutation = UIListContentConfiguration.groupedHeader()
-            configutation.text = self.sectionList[indexPath.section]
+            configutation.text = Section.allCases[indexPath.section].rawValue
             configutation.textProperties.color = .systemBrown
             supplementaryView.contentConfiguration = configutation
         }
